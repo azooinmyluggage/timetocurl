@@ -9,15 +9,15 @@ const fs = require("fs");
 
 function setupRoutes(app) {
 	app.get("/", (req, res) => {
-		res.sendFile(join(__dirname, "../client/index.html"));
+		res.sendFile(join(__dirname, "wwwroot", "../client/index.html"));
 	});
 
 	app.get("/time-minder.js", (req, res) => {
-		res.sendFile(join(__dirname, "../client/time-minder.js"));
+		res.sendFile(join(__dirname, "wwwroot", "../client/time-minder.js"));
 	});
 
 	app.get("/style.css", async (req, res) => {
-		res.sendFile(join(__dirname, "../client/bin/main.css"));
+		res.sendFile(join(__dirname, "wwwroot", "../client/bin/main.css"));
 	});
 
 	app.use(express.static(join(process.cwd(), "client", "icons")));
