@@ -11,9 +11,7 @@
     "mon": "nodemon ./bin/index.js",
     "start": "node ./bin/index.js"
   },
-  "engines": {
-    "node": ">=8.0.0"
-  },
+  "engines":{"node": "0.6.22 || 0.8.x"},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trianglecurling/timetocurl.git"
